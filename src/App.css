@@ -1,10 +1,17 @@
+html,
+#root,
+body {
+  height: 100%;
+}
 .main-container {
+  height: 100%;
   margin: auto;
-  margin-top: 1rem;
-  max-width: 80vw;
+  padding: 5rem 1rem;
+  /* max-width: 80vw; */
+
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
 }
 .row {
@@ -20,8 +27,11 @@
 }
 
 .time-count {
-  font-size: 2rem;
+  font-size: 4rem;
   font-weight: bold;
+}
+.remaining-secs {
+  font-size: 1.2rem;
 }
 
 .environment-label {
@@ -29,26 +39,33 @@
   margin-right: 4px;
 }
 
-.bottom {
-  position: absolute;
-  bottom: 50px;
+.mini-button {
+  border-radius: 10px;
+  margin: 0.5rem;
+  padding: 0.5rem;
 }
 
 /* All three button */
-
 .main-timer,
 .break-timer,
 .btn-clear {
-  padding: 10px;
+  padding: 0.5rem 1rem;
   border-radius: 10px;
-  margin: 2rem;
+  margin: 0.2rem;
   font-size: 1.5rem;
 }
 
+/* These desktop settings coz I made this a mobile first site. */
 @media (min-width: 550px) {
   .main-timer,
   .break-timer,
   .btn-clear {
     font-size: 3rem;
+    padding: 1rem 2.5rem;
+    margin: 2rem;
+  }
+
+  .time-count {
+    font-size: 6rem;
   }
 }

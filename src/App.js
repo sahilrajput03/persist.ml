@@ -9,8 +9,14 @@ const format = (seconds) => {
   if (seconds < 60) return seconds + " seconds";
 
   let mins = Math.floor(seconds / 60) + " mins ";
-  let remaining_seconds = seconds % 60 === 0 ? "" : (seconds % 60) + " seconds";
-  return mins + remaining_seconds;
+  // let remaining_seconds = seconds % 60 === 0 ? "" : (seconds % 60) + " seconds";
+  let remaining_seconds = (seconds % 60) + " seconds";
+  return (
+    <>
+      <div>{mins}</div>{" "}
+      <div className="remaining-secs">{remaining_seconds}</div>
+    </>
+  );
 };
 
 const getProductionState = localStorage.getItem("set_is_production") || 0;
@@ -84,7 +90,29 @@ function App() {
         )}
         {clearButtonE}
       </div>
-      <div className="row bottom">
+
+      {count > -1 ? (
+        <div>
+          <button
+            className="mini-button"
+            onClick={() => {
+              setCount((count) => count - (is_production ? 5 * 60 : 3));
+            }}
+          >
+            - 5 mins
+          </button>
+          <button
+            className="mini-button"
+            onClick={() => {
+              setCount((count) => count + (is_production ? 5 * 60 : 3));
+            }}
+          >
+            + 5 mins
+          </button>
+        </div>
+      ) : null}
+
+      <div className="row">
         <div className="column environment-label">Production:</div>
         <label className="switch">
           <input
