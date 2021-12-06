@@ -1,10 +1,10 @@
-# Readme
+# persist.ml
 
 ## Testing phase:
 
 - [ ] Test if sound can be executed by a webpage after certain interval?...
 
-## Feats/Goals in persist.ml:
+## Feats/Goals :
 
 - [x] Add a +5 mins button which can be used dynamically only i.e., only if either break time or pomodoro time is running.
 - [x] Remove the hassel of everytime setting the timer of 5 mins and 25 mins sometimes.
@@ -23,7 +23,4 @@ Buttons:
 - [ ] Run Pomodoro: 25min button
 - [ ] Run Break: 5min break button, test sound button
 - [ ] Tets sound button.
-
-Checkbox:
-
-- Continuity (by default ON): it'll make the break run automatically after the pomodoro and then run the pomodoro after the break and so on.
+- [ ] Checkbox - Continuity (by default ON): it'll make the break run automatically after the pomodoro and then run the pomodoro after the break and so on.
