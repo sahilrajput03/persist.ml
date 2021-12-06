@@ -2,7 +2,7 @@
 
 ## Testing phase:
 
-- [] Test if sound can be executed by a webpage after certain interval?...
+- [ ] Test if sound can be executed by a webpage after certain interval?...
 
 ## Feats/Goals in persist.ml:
 
