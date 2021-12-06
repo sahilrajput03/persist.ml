@@ -2,7 +2,7 @@
 
 ## Feats/Goals in persist.ml:
 
-- Testing phase: Test if sound can be executed by a webpage after certain interval?..
+- Testing phase: Test if sound can be executed by a webpage after certain interval?...
 
 1. Continuity: continue 5 minutes break automaticaly after 30 sec relax break on a full pomodoro completion.
 2. Add sound test button in the app.
