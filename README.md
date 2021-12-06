@@ -7,14 +7,14 @@
 1. Continuity: continue 5 minutes break automaticaly after 30 sec relax break on a full pomodoro completion.
 2. Add sound test button in the app.
 3. Add a +5 mins button which can be used dynamically only i.e., only if either break time or pomodoro time is running.
-4. Remove the hassel of everytime setting the timer of 5 mins and 25 mins sometimes.
+4. [x] Remove the hassel of everytime setting the timer of 5 mins and 25 mins sometimes.
 5. After 3 pomodoros it should set a break time of 25 minutes automatically so as to follow pomodoro principles and then again work for same like 3 regular pomodoros, yo!
 6. Setting button to allow changing default pomodoro, default break time and default break time.
 7. Add a label option there as well.
 
 ## Ui notes
 
-Show the countdown in case of both i.e., pomodoro and the timer.
+[x] Show the countdown in case of both i.e., pomodoro and the timer.
 
 Buttons:
 

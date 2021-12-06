@@ -11,6 +11,22 @@
   justify-content: center;
   align-content: center;
 }
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.environment-label {
+  font-size: 1.2rem;
+  margin-right: 4px;
+}
+
+.bottom {
+  position: absolute;
+  bottom: 0;
+}
 
 .main-timer,
 .break-timer,
