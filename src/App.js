@@ -112,7 +112,7 @@ function App() {
         </div>
       ) : null}
 
-      <div className="row">
+      <div className="row environment-row">
         <div className="column environment-label">Production:</div>
         <label className="switch">
           <input

@@ -34,6 +34,10 @@ body {
   font-size: 1.2rem;
 }
 
+.environment-row {
+  padding-top: 2rem;
+}
+
 .environment-label {
   font-size: 1.2rem;
   margin-right: 4px;
@@ -41,18 +45,27 @@ body {
 
 .mini-button {
   border-radius: 10px;
-  margin: 0.5rem;
-  padding: 0.5rem;
+  margin: 2rem 0.5rem;
+  padding: 1rem;
 }
 
 /* All three button */
 .main-timer,
 .break-timer,
 .btn-clear {
-  padding: 0.5rem 1rem;
+  padding: 1rem 2.8rem;
   border-radius: 10px;
   margin: 0.2rem;
   font-size: 1.5rem;
+}
+
+.main-timer {
+  background: rgb(33, 150, 243);
+  color: white;
+}
+.break-timer {
+  background: rgba(33, 150, 243, 0.5);
+  color: white;
 }
 
 /* These desktop settings coz I made this a mobile first site. */
@@ -67,5 +80,8 @@ body {
 
   .time-count {
     font-size: 6rem;
+  }
+  .mini-button {
+    margin: 1rem 0.5rem;
   }
 }
