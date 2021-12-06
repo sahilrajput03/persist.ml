@@ -52,7 +52,7 @@ function App() {
     );
   return (
     <div className="main-container">
-      <div>{format(count)}</div>
+      <div className="time-count">{format(count)}</div>
       <div className="row">
         {showMain && (
           <button
@@ -63,7 +63,9 @@ function App() {
               setShowBreak(true);
             }}
           >
-            Start Pomodoro: 25 mins
+            Start Pomodoro
+            <br />
+            25 mins
           </button>
         )}
 
@@ -76,7 +78,8 @@ function App() {
               setShowMain(true);
             }}
           >
-            Start BREAK: 5 mins
+            Start BREAK
+            <br />5 mins
           </button>
         )}
         {clearButtonE}

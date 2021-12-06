@@ -1,3 +1,14 @@
+/* Remove weird ouline on checkbox active on mobile: https://stackoverflow.com/a/45050338/10012446 
+this doesn't work to fix in my mobile though :(
+input,
+textarea,
+button,
+select,
+a {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0) !important;
+}
+*/
+
 /* The switch - the box around the slider */
 .switch {
   position: relative;
