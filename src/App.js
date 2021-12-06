@@ -15,6 +15,7 @@ const format = (seconds) => {
 function App() {
   const [count, setCount] = useState(-1);
   const [showMain, setShowMain] = useState(true);
+  const [showBreak, setShowBreak] = useState(true);
 
   useEffect(() => {
     const my_timer = setTimeout(() => {
@@ -28,36 +29,50 @@ function App() {
     };
   });
 
-  const clearButtonE = showMain ? null : (
-    <button
-      onClick={() => {
-        setShowMain(true);
-        setCount(-1);
-      }}
-    >
-      Clear
-    </button>
-  );
+  const clearButtonE =
+    showMain && showBreak ? null : (
+      <button
+        className="btn-clear"
+        onClick={() => {
+          setShowMain(true);
+          setShowBreak(true);
+          setCount(-1);
+        }}
+      >
+        Clear
+      </button>
+    );
   return (
-    <div className="App">
-      {showMain && (
-        <button
-          onClick={() =>
-            setShowMain((main) => {
+    <div className="main-container">
+      <div>{format(count)}</div>
+      <div className="row">
+        {showMain && (
+          <button
+            className="main-timer"
+            onClick={() => {
               setCount(is_prod ? 25 * 60 : 6); // prod: 25mins; dev: 6secs
-              return !main;
-            })
-          }
-        >
-          25 mins
-        </button>
-      )}
+              setShowMain(false);
+              setShowBreak(true);
+            }}
+          >
+            Start Pomodoro: 25 mins
+          </button>
+        )}
 
-      <br />
-      {format(count)}
-
-      <br />
-      {clearButtonE}
+        {showBreak && (
+          <button
+            className="break-timer"
+            onClick={() => {
+              setCount(is_prod ? 5 * 60 : 3); // prod: 5mins; dev: 3secs
+              setShowBreak(false);
+              setShowMain(true);
+            }}
+          >
+            Start BREAK: 5 mins
+          </button>
+        )}
+        {clearButtonE}
+      </div>
     </div>
   );
 }
