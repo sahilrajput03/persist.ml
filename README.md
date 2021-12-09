@@ -1,5 +1,7 @@
 # persist.ml
 
+Similar app used by kent in [video](https://www.youtube.com/watch?v=4k4rT31aGo0) i.e., [Centered](https://www.centered.app/).
+
 ## Busted ?
 
 It seems the app won't work in background i.e., if you exit chrome the app sucks and timer doesn't seem to be working as it freezes after 10-30secs.. need to look for some alternate to fix this.
